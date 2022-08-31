@@ -1,4 +1,4 @@
-# #1.
+#1.
 a = 5
 b = 7
 d = a * b
@@ -16,11 +16,11 @@ h = m // 60
 print("%02d:%02d:%02d" % (h, m % 60, s % 60))
 
 #3.
-n = int(input("Введите число n: "))
-temp = str(n)
+n = input("Введите число n: ")
+temp = n
 n2 = temp + temp
 n3 = temp + temp + temp
-summa = n + int(n2) + int(n3)
+summa = int(n) + int(n2) + int(n3)
 print("Результат равен:", summa)
 
 #4.
