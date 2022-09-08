@@ -1,4 +1,4 @@
-### 1
+# 1
 li = [12, 'Bob', 466, 48.2, 'Jon', 12.23, True, 45.6]
 for i in li:
     print(type(i), i)
