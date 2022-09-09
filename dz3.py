@@ -11,9 +11,21 @@
 # my_numbers()
 
 #2
-def people(name, surname, year, city, email, tel_num):
-    print(f"Имя = {name}, Фамилия = {surname}, Год = {year}, Город = {city}, Эл.почта = {email}, Тел.номер = {tel_num}")
-people('Иван', 'Петров', '1965', 'Москва', 'ivan@mail.ml', '89073451298')
+# def people(name, surname, year, city, email, tel_num):
+#     print(f"Имя = {name}, Фамилия = {surname}, Год = {year}, Город = {city}, Эл.почта = {email}, Тел.номер = {tel_num}")
+# people('Иван', 'Петров', '1965', 'Москва', 'ivan@mail.ml', '89073451298')
 #people(name = input('Введите имя: '), surname = input('Введите фамилию: '), year = input('Введите год: '), city = input('Введите город: '), email = input('Введите email: '), tel_num = input('Введите телефонны номер: '))
 
 #3
+def my_func(a, b, c):
+    if a >= b and c >= b:
+        return a + c
+    elif b > a and c > a:
+        return b + c
+    elif b > c and a > c:
+        return a + b
+
+sum = my_func(a = int(input("enter a: ")), b = int(input("enter b: ")), c = int(input("enter c: ")))
+print(sum)
+
+
