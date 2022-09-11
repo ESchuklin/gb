@@ -29,19 +29,30 @@
 # print(sum)
 
 #4
-def my_func(x, y):
-    a = (x**y)
-    print(a)
-my_func(31, -2)
-
-def my_func(x, y):
-    a = 1
-    for i in range(abs(y)):
-        a *= x
-    if y >= 0:
-        return a
-    else:
-        return 1 / a
-print(my_func(31, -2))
+# def my_func(x, y):
+#     a = (x**y)
+#     print(a)
+# my_func(31, -2)
+#
+# def my_func(x, y):
+#     a = 1
+#     for i in range(abs(y)):
+#         a *= x
+#     if y >= 0:
+#         return a
+#     else:
+#         return 1 / a
+# print(my_func(31, -2))
 
 #5
+def print_num():
+    while True:
+        number = input('enter data: ').split()
+        res = 0
+        for el in range(len(number)):
+            if number[el] == 'stop':
+                return
+            else:
+                res = res + int(number[el])
+        print(res)
+print_num()
