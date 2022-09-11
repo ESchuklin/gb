@@ -17,15 +17,31 @@
 #people(name = input('Введите имя: '), surname = input('Введите фамилию: '), year = input('Введите год: '), city = input('Введите город: '), email = input('Введите email: '), tel_num = input('Введите телефонны номер: '))
 
 #3
-def my_func(a, b, c):
-    if a >= b and c >= b:
-        return a + c
-    elif b > a and c > a:
-        return b + c
-    elif b > c and a > c:
-        return a + b
+# def my_func(a, b, c):
+#     if a >= b and c >= b:
+#         return a + c
+#     elif b > a and c > a:
+#         return b + c
+#     elif b > c and a > c:
+#         return a + b
+#
+# sum = my_func(a = int(input("enter a: ")), b = int(input("enter b: ")), c = int(input("enter c: ")))
+# print(sum)
 
-sum = my_func(a = int(input("enter a: ")), b = int(input("enter b: ")), c = int(input("enter c: ")))
-print(sum)
+#4
+def my_func(x, y):
+    a = (x**y)
+    print(a)
+my_func(31, -2)
 
+def my_func(x, y):
+    a = 1
+    for i in range(abs(y)):
+        a *= x
+    if y >= 0:
+        return a
+    else:
+        return 1 / a
+print(my_func(31, -2))
 
+#5
