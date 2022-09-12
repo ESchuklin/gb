@@ -45,14 +45,17 @@
 # print(my_func(31, -2))
 
 #5
-def print_num():
+def my_num():
+    res1 = 0
     while True:
-        number = input('enter data: ').split()
+        number = input('Введите числа или stop для завершения: ').split()
         res = 0
         for el in range(len(number)):
             if number[el] == 'stop':
                 return
             else:
                 res = res + int(number[el])
-        print(res)
-print_num()
+        res1 = res1 + res
+        print(res1)
+my_num()
+
