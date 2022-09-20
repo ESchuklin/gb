@@ -1,4 +1,4 @@
-##dz5
+#dz5
 
 #1
 f = open(r'file.txt', 'w', encoding='utf-8')
